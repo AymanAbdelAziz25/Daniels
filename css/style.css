@@ -1,0 +1,540 @@
+/* ************************************************ Start of Style *********************************************** */
+/* ************************************************ General  Style *********************************************** */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+:root {
+    --main-color: #1C1C1C;
+    --sec-color: #343434;
+    
+}
+
+h2,
+h3 {
+    font-family: "Montserrat", sans-serif;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+
+
+}
+
+.mainColor {
+    color: var(--main-color);
+}
+
+.secColor {
+    color: var(--sec-color);
+}
+
+.bg-mainColor {
+    background-color: var(--main-color);
+}
+
+.bg-secColor {
+    background-color: #F7F7F7;
+}
+.headTitle h2{
+    position: relative;
+    font-weight: 900!important;
+}
+.headTitle h2::after{
+    content: "";
+    width: 30%;
+    height: 70%;
+    position: absolute;
+    transform: translate(-85%);
+    bottom: -10px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(/image/dots.png);
+    background-repeat: repeat; 
+    z-index: -1;
+
+}
+.iconB{
+    width: 80px;
+    height:80px;
+    border-radius: 50%;
+    transition: 0.5s all;
+
+}
+
+/* ************************************************ NavBar Style *********************************************** */
+
+nav .nav-link{
+        position: relative;
+}
+nav .nav-link::after{
+        content: '';
+        position: absolute;
+        width:0%;
+        height: 3px;
+        background-color: var(--main-color);
+        bottom: 0;
+        left: 0;
+        transition: 0.5s all;
+}
+nav .nav-link:hover::after{
+        width:100%;
+}
+
+nav .nav-link.active::after  {
+    content: '';
+    position: absolute;
+    width:100%;
+    height: 3px;
+    background-color: var(--main-color);
+    bottom: 0;
+    left: 0;
+    transition: 0.5s all;
+}
+
+
+/* ************************************************ Header Style *********************************************** */
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/image/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    
+}
+
+.icon {
+    width: 35px;
+    height: 35px;
+    border: 1px solid transparent;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.icon .fa {
+    font-size: 12px;
+}
+
+header h3::after {
+    content: "|";
+    animation: typing 15s infinite;
+}
+
+@keyframes typing {
+    0% {
+        content: "L|";
+    }
+
+    2% {
+        content: "La|";
+    }
+
+    4% {
+        content: "Lar|";
+    }
+
+    6% {
+        content: "Larr|";
+    }
+
+    8% {
+        content: "Larry |";
+    }
+
+    10% {
+        content: "Larry D|";
+    }
+
+    12% {
+        content: "Larry Da|";
+    }
+
+    14% {
+        content: "Larry Dan|";
+    }
+
+    16% {
+        content: "Larry Dani|";
+    }
+
+    18% {
+        content: "Larry Danie|";
+    }
+
+    20% {
+        content: "Larry Daniel|";
+    }
+
+    22% {
+        content: "Larry Daniels|";
+    }
+
+    24% {
+        content: "DeLarry Daniel|";
+    }
+
+    26% {
+        content: "Larry Danie|";
+    }
+
+    28% {
+        content: "Larry Dani|";
+    }
+
+    30% {
+        content: "Larry Dan|";
+    }
+
+    32% {
+        content: "Larry Da|";
+    }
+
+    34% {
+        content: "Larry D|";
+    }
+
+    36% {
+        content: "Larry|";
+    }
+
+    38% {
+        content: "Larr|";
+    }
+
+    40% {
+        content: "Lar|";
+    }
+
+    42% {
+        content: "La|";
+    }
+
+    44% {
+        content: "L|";
+    }
+
+    46% {
+        content: "|";
+    }
+
+    48% {
+        content: "D|";
+    }
+
+    50% {
+        content: "De|";
+    }
+
+    52% {
+        content: "Dev|";
+    }
+
+    54% {
+        content: "Deve|";
+    }
+
+    56% {
+        content: "Devel|";
+    }
+
+    58% {
+        content: "Develo|";
+    }
+
+    60% {
+        content: "Develop|";
+    }
+
+    62% {
+        content: "Develope|";
+    }
+
+    64% {
+        content: "Developer|";
+    }
+
+    66% {
+        content: "Develope|";
+    }
+
+    68% {
+        content: "Develop|";
+    }
+
+    70% {
+        content: "Develo|";
+    }
+
+    72% {
+        content: "Devel|";
+    }
+
+    74% {
+        content: "Deve|";
+    }
+
+    76% {
+        content: "Dev|";
+    }
+
+    78% {
+        content: "De|";
+    }
+
+    80% {
+        content: "Des|";
+    }
+
+    82% {
+        content: "Desi|";
+    }
+
+    84% {
+        content: "Desig|";
+    }
+
+    86% {
+        content: "Design|";
+    }
+
+    88% {
+        content: "Designe|";
+    }
+
+    90% {
+        content: "Designer|";
+    }
+
+    92% {
+        content: "Design|";
+    }
+
+    94% {
+        content: "Desi|";
+    }
+
+    96% {
+        content: "De|";
+    }
+
+    98% {
+        content: "|";
+    }
+
+    100% {
+        content: "L|";
+    }
+}
+
+
+/* ************************************************ About Style *********************************************** */
+
+#about .imgInner img{
+    width: 90%;
+    left: 5%;
+    
+}  
+#about .imgLayer{
+    top:60%;
+}
+#about .P1{
+    width: 500px ; 
+    text-align: right;
+ }   
+ #about .P2{
+    width: 425px ; 
+    text-align: right;
+ } 
+ #about .P3{
+    width: 455px ; 
+    text-align: right;
+ } 
+ 
+#about .progress {
+    height: 25px;
+}
+
+#about .progress-bar {
+    justify-content: space-around;
+}
+#about .btn1:hover{
+    color: var(--sec-color)!important;
+    border-color: var(--sec-color);
+}
+#about .btn2{
+    
+    border-color: var(--sec-color);
+}
+#about .btn2:hover{
+    background-color: var(--main-color)!important;
+    color: white;
+}
+
+
+/* ************************************************ Services Style *********************************************** */
+
+#services .headTitle h2::after{
+     background-image: linear-gradient(rgba(25, 255, 255, 1), rgba(25, 255, 255, 1)), url(/image/dots.png)!important; 
+    
+}
+
+#services .inner:hover .iconB{
+    background-color: var(--main-color);
+    color: #F7F7F7;
+}
+
+/* ************************************************ Portfolio Style *********************************************** */
+#works .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    border-color: white;
+    font-weight: 700;
+}
+#works .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    
+    border-color: white;
+}
+#works .nav-tabs{
+border-bottom: none;
+}
+#works .nav{
+    font-weight: 700;
+    --bs-nav-link-hover-color:black;
+    --bs-nav-link-color:black;
+}
+
+#works .nav-link{
+        position: relative;
+}
+
+#works .nav-link.active::after{
+        content: '';
+        position: absolute;
+        width:75%;
+        height: 3px;
+        background-color: black;
+        bottom: 0;
+        left: 10%;
+        transition: 0.5s all;
+}
+#works .iconP{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s all;
+    background-color:black;
+    color:white;
+}
+#works .iconP:hover{
+    background-color:white;
+    color:black;
+    border:1px solid black;
+}
+#works .imgLayer{
+    position: absolute;
+    inset: 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+    opacity: 0; 
+    transform: rotateX(25deg);
+    transition: 0.3s all; 
+}
+#works .innerImg:hover .imgLayer {
+    transform: rotateX(0deg);
+    opacity: 1;
+}
+#works .innerImg .layerContent {
+    transform: translateY(-500px);
+    transition: 0.5s all;
+}
+
+#works .innerImg:hover .layerContent {
+    transform: translateY(0);
+}
+#works .innerImg .layerIcon {
+    transform: translateY(500px);
+    transition: 0.5s all;
+}
+
+#works .innerImg:hover .layerIcon {
+    transform: translateY(0);
+}
+#works .modal-content{
+    background-color: transparent;
+    border: none;
+}
+
+
+/* ************************************************ Testimonials Style *********************************************** */
+#clients img{
+    width: 10%;
+}
+#clients .carousel-indicators [data-bs-target]{
+    width:10px;
+    height:10px;
+    border-radius: 50%;
+    background-color: #d6d6d6;
+}
+#clients .carousel-indicators .active{
+    background-color: #869791;
+}
+
+/* ************************************************ Counters Style *********************************************** */
+/* ************************************************ Team Style *********************************************** */
+#team .itemText{
+    background-color: #5B5B5B;
+}
+#team .item .itemLayer{
+    inset: 5px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.9);
+    opacity: 0;
+    transform: scale(0) rotateY(180deg);
+    transition: 1s all;
+}
+#team .item:hover .itemLayer{
+    opacity: 1;
+    transform: scale(1) rotateY(0deg) ;
+}
+#team .item img{
+    transition: 1s all
+}
+#team .itemImg:hover img{
+    transform: scale(1.2);
+}
+#team .iconT{
+    width: 40px;
+    height: 40px;
+    border: 1px solid transparent;
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+    border-radius: 50%;
+    transition: 0.5s all
+}
+#team .iconT:hover{
+border-color: black;
+background-color: white;
+color: black;
+}
+
+/* ************************************************ Contact Style *********************************************** */
+#contact .form-control:focus{
+    border-color: white;
+    box-shadow:none;
+}
+#contact .form-control{
+    background-color: #F7F7F7;
+    border-color: white;
+}
+#contact .btn1:hover{
+    color: var(--sec-color)!important;
+    border-color: var(--sec-color);
+}
+#contact .inner:hover .iconB{
+    background-color: var(--main-color);
+    color: #F7F7F7;
+}
+
+/* ************************************************ Footer Style *********************************************** */
+/* ************************************************ End of Style *********************************************** */
