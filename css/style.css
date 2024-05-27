@@ -52,7 +52,7 @@ p {
     position: absolute;
     transform: translate(-85%);
     bottom: -10px;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(/image/dots.png);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(./image/dots.png);
     background-repeat: repeat; 
     z-index: -1;
 
@@ -98,7 +98,7 @@ nav .nav-link.active::after  {
 
 /* ************************************************ Header Style *********************************************** */
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/image/bg.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./image/bg.jpg);
     background-position: center;
     background-repeat: no-repeat; 
     background-size: cover;
